@@ -1,0 +1,49 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg2" x1="120" y1="60" x2="1050" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FBFF"/>
+      <stop offset="1" stop-color="#E8F2FF"/>
+    </linearGradient>
+    <linearGradient id="barA" x1="0" y1="1" x2="0" y2="0">
+      <stop stop-color="#0E5A9C"/>
+      <stop offset="1" stop-color="#2A7AD1"/>
+    </linearGradient>
+    <linearGradient id="barB" x1="0" y1="1" x2="0" y2="0">
+      <stop stop-color="#0D7B73"/>
+      <stop offset="1" stop-color="#18A89E"/>
+    </linearGradient>
+  </defs>
+  <rect x="20" y="20" width="1160" height="720" rx="36" fill="url(#bg2)"/>
+  <g font-family="Segoe UI, Arial, sans-serif" fill="#0E355C">
+    <text x="600" y="95" text-anchor="middle" font-size="40" font-weight="700">Projected Environmental Impact</text>
+    <text x="600" y="134" text-anchor="middle" font-size="25">During project vs five years post-project</text>
+  </g>
+  <line x1="170" y1="600" x2="1020" y2="600" stroke="#87A9CD" stroke-width="3"/>
+  <line x1="170" y1="220" x2="170" y2="600" stroke="#87A9CD" stroke-width="3"/>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="250" y="450" width="110" height="150" rx="12" fill="url(#barA)"/>
+    <rect x="385" y="300" width="110" height="300" rx="12" fill="url(#barB)"/>
+    <text x="305" y="640" text-anchor="middle" font-size="22" fill="#0E355C">Energy</text>
+    <text x="440" y="640" text-anchor="middle" font-size="22" fill="#0E355C">Energy</text>
+    <text x="305" y="440" text-anchor="middle" font-size="22" fill="#0E355C">120-180</text>
+    <text x="440" y="288" text-anchor="middle" font-size="22" fill="#0E355C">2,500-5,000</text>
+    <text x="305" y="668" text-anchor="middle" font-size="17" fill="#416186">MWh/yr</text>
+    <text x="440" y="668" text-anchor="middle" font-size="17" fill="#416186">MWh/yr</text>
+
+    <rect x="600" y="490" width="110" height="110" rx="12" fill="url(#barA)"/>
+    <rect x="735" y="320" width="110" height="280" rx="12" fill="url(#barB)"/>
+    <text x="655" y="640" text-anchor="middle" font-size="22" fill="#0E355C">CO2</text>
+    <text x="790" y="640" text-anchor="middle" font-size="22" fill="#0E355C">CO2</text>
+    <text x="655" y="480" text-anchor="middle" font-size="22" fill="#0E355C">45-75</text>
+    <text x="790" y="308" text-anchor="middle" font-size="22" fill="#0E355C">950-2,000</text>
+    <text x="655" y="668" text-anchor="middle" font-size="17" fill="#416186">t/yr</text>
+    <text x="790" y="668" text-anchor="middle" font-size="17" fill="#416186">t/yr</text>
+  </g>
+  <g font-family="Segoe UI, Arial, sans-serif">
+    <rect x="890" y="122" width="240" height="126" rx="16" fill="#FFFFFF" stroke="#B7CCE5"/>
+    <circle cx="928" cy="163" r="10" fill="#2A7AD1"/>
+    <text x="949" y="171" font-size="20" fill="#0E355C">During Project</text>
+    <circle cx="928" cy="208" r="10" fill="#18A89E"/>
+    <text x="949" y="216" font-size="20" fill="#0E355C">5 Years Post-Project</text>
+  </g>
+</svg>
