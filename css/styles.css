@@ -4,8 +4,8 @@
   --ink: #f3f6fb;
   --muted: #bfc5cc;
   --line: #434b55;
-  --brand: #2d6bff;
-  --brand-soft: #1d2430;
+  --brand: #c6a36a;
+  --brand-soft: #2b2520;
 }
 
 * {
@@ -80,8 +80,8 @@ body {
 .site-nav a:hover,
 .site-nav a[aria-current="page"] {
   background: var(--brand);
-  color: #ffffff;
-  border-color: var(--brand);
+  color: #15181d;
+  border-color: #d5b784;
   transform: translateY(-1px);
 }
 
@@ -286,7 +286,7 @@ th {
 .button {
   display: inline-block;
   text-decoration: none;
-  color: #ffffff;
+  color: #15181d;
   background: var(--brand);
   border-radius: 9px;
   padding: 10px 14px;
@@ -294,7 +294,7 @@ th {
 }
 
 .button:hover {
-  background: #083d6b;
+  background: #d5b784;
 }
 
 .cta {
