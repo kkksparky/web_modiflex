@@ -1,12 +1,33 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const sections = document.querySelectorAll(".section, .hero");
-  sections.forEach((section, index) => {
-    section.style.opacity = "0";
-    section.style.transform = "translateY(10px)";
-    section.style.transition = "opacity 0.5s ease, transform 0.5s ease";
-    setTimeout(() => {
-      section.style.opacity = "1";
-      section.style.transform = "translateY(0)";
-    }, 80 * index);
+  const page = document.body.dataset.page;
+  const navLinks = document.querySelectorAll(".site-nav a");
+  navLinks.forEach((link) => {
+    const href = link.getAttribute("href");
+    if (!href) return;
+    const pageName = href.replace(".html", "");
+    const targetPage = pageName === "index" ? "home" : pageName;
+    if (targetPage === page) {
+      link.setAttribute("aria-current", "page");
+    }
   });
+
+  const revealItems = document.querySelectorAll(".reveal");
+  if (!("IntersectionObserver" in window)) {
+    revealItems.forEach((item) => item.classList.add("visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.12 }
+  );
+
+  revealItems.forEach((item) => observer.observe(item));
 });
